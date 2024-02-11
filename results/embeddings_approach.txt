@@ -1,0 +1,76 @@
+Optimal Thresholds:
+  - threshold for every app:
+    trimmed_content_tags:  0.9739582538604
+    trimmed_content:  0.9218748807907104
+    trimmed_tags:  0.9739583134651184
+    whole_content_tags: 0.973958253860473
+    whole_content:  0.9244791269302368
+    whole_tags:  0.9817708134651184
+  
+  - threshold across apps:
+      Embeddings file: trimmed_content_tags
+        Application: addressbook :  0.9557291269302368
+        Application: claroline :  0.9999999403953552
+        Application: dimeshift :  0.9843748807907104
+        Application: mantisbt :  0.9843749403953552
+        Application: mrbs :  0.994791567325592
+        Application: pagekit :  0.986979067325592
+        Application: petclinic :  0.9635416269302368
+        Application: phoenix :  0.9374999403953552
+        Application: ppma :  0.9999999403953552
+        
+      Embeddings file: trimmed_content
+        Application: addressbook :  0.9244791269302368
+        Application: claroline :  0.9999999403953552
+        Application: dimeshift :  0.9999999403953552
+        Application: mantisbt :  0.9531248807907104
+        Application: mrbs :  0.901041567325592
+        Application: pagekit :  0.9791665077209473
+        Application: petclinic :  0.8932291269302368
+        Application: phoenix :  0.7265623807907104
+        Application: ppma :  0.9999999403953552
+        
+      Embeddings file: trimmed_tags
+        Application: addressbook :  0.9374998807907104
+        Application: claroline :  0.9999999403953552
+        Application: dimeshift :  0.9921874403953552
+        Application: mantisbt :  0.9817707538604736
+        Application: mrbs :  0.9895833134651184
+        Application: pagekit :  0.9843749403953552
+        Application: petclinic :  0.9765623807907104
+        Application: phoenix :  0.9218749403953552
+        Application: ppma :  0.9999999403953552
+        
+      Embeddings file: whole_content_tags
+        Application: addressbook :  0.9557291269302368
+        Application: claroline :  0.9999999403953552
+        Application: dimeshift :  0.9895832538604736
+        Application: mantisbt :  0.9895831942558289
+        Application: mrbs :  0.9973957538604736
+        Application: pagekit :  0.9973957538604736
+        Application: petclinic :  0.9739582538604736
+        Application: phoenix :  0.9635414481163025
+        Application: ppma :  0.9999999403953552
+        
+      Embeddings file: whole_content
+        Application: addressbook :  0.9114582538604736
+        Application: claroline :  0.9817707538604736
+        Application: dimeshift :  0.9895832538604736
+        Application: mantisbt :  0.9817707538604736
+        Application: mrbs :  0.9401040077209473
+        Application: pagekit :  0.9583331942558289
+        Application: petclinic :  0.9036456942558289
+        Application: phoenix :  0.7786456942558289
+        Application: ppma :  0.9999999403953552
+        
+      Embeddings file: whole_tags
+        Application: addressbook :  0.9505207538604736
+        Application: claroline :  0.9999999403953552
+        Application: dimeshift :  0.9947916269302368
+        Application: mantisbt :  0.9999999403953552
+        Application: mrbs :  0.9973957538604736
+        Application: pagekit :  0.9843749403953552
+        Application: petclinic :  0.971354067325592
+        Application: phoenix :  0.9687498211860657
+        Application: ppma :  0.9999999403953552
+
