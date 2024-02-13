@@ -1,0 +1,18 @@
+State-Pair in Question: Addressbook: State141 - State239
+
+RTED:
+  optimal threshold: 0.04099 (as reported https://people.ece.ubc.ca/amesbah/resources/papers/icse20.pdf)
+  RTED Computed using Crawljax's implementation: 0.6708860759493671
+  0.04099 << 0.671 => state-pair is classified as distinct!
+
+Fine-Tuned Model trained on Content Representation:
+Correct Classification as Duplicate, confidence 0.997
+
+code for obtaining the probability:
+  # extract logits and apply softmax
+  probabilities = torch.softmax(outputs.logits, dim=-1)
+  
+  # predict the class with the highest probability
+  predicted_class_id = probabilities.argmax(dim=-1).item()
+  
+  print(probabilities[0, predicted_class_id].item())
