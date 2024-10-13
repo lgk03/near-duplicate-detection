@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 
 # setthe technique used 
-baseline = 'webembed' # bert-base, bert-adj, rted, webembed
+baseline = 'bert-adj' # bert-base, bert-adj, rted, webembed
 representation = 'content'
 
 apps = ['addressbook', 'claroline', 'ppma', 'mrbs', 'mantisbt', 'dimeshift', 'pagekit', 'phoenix', 'petclinic']
@@ -23,7 +23,7 @@ SS_sampled = SS.sample(n=10000, random_state=42) # sample 10k rows from SS
 if baseline == 'bert-base' or baseline == 'bert-adj':
     for app in apps:
         total_time = 0
-        model_path = f'lgk03/WITHINAPPS_NDD-{app}_test-{representation}{-'CWAdj' if baseline == 'bert-adj' else ''}'
+        model_path = f'lgk03/WITHINAPPS_NDD-{app}_test-{representation}{'-CWAdj' if baseline == 'bert-adj' else ''}'
         model, tokenizer = load_model_and_tokenizer(model_path) 
         app_dataset = SS_sampled[SS_sampled['appname'] == app]
         for index, row in app_dataset.iterrows():
